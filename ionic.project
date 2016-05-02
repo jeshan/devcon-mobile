@@ -1,6 +1,6 @@
 {
   "name": "devcon-mobile",
-  "app_id": "",
+  "app_id": "0d8d8131",
   "gulpStartupTasks": [
     "sass",
     "watch"
