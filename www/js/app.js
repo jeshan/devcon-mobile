@@ -79,6 +79,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
+    .state('app.map', {
+      url: '/map',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/map.html'
+        }
+      }
+    })
+
     .state('app.extensions', {
       url: '/extensions',
       views: {
