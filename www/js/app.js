@@ -97,6 +97,24 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+
+    .state('app.register', {
+      url: '/register',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/register.html'
+        }
+      }
+    })
+
+    /*.state('app.components', {
+      url: '/components',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/components.html'
+        }
+      }
+    })*/
   ;
 
   // if none of the above states are matched, use this as the fallback
