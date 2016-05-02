@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.devconmobile311045" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.methodicalprogrammer.devconmobile311045" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>devcon-mobile</name>
   <description>
-        An Ionic Framework and Cordova project.
+    The official app for the MSCC Devevelopers Conference 2016, built to be your co-pilot to navigate the conference.
+
+    -- Explore the conference agenda, with details on themes, topics and speakers
+    -- Add events to a personalised schedule
+    -- Get reminders before events in “My schedule” start
+    -- Guide yourself using the vector-based conference map
+    -- Follow public social I/O related conversations on Twitter
+    -- Use the Widget to check your upcoming events directly from your home screen
+
+    *Exclusive for In person attendees:*
+    -- Take advantage of facilitated pre-event WiFi configuration
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+  <author email="j@jeshan.co" href="http://MethodicalProgrammer.com">
+      Jeshan G. BABOOA
     </author>
   <content src="index.html"/>
   <access origin="*"/>
