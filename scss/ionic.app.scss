@@ -21,3 +21,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+div.schedule-list {
+  padding-top: 100px;
+}
+
+.tabs-top > .tabs {
+  top: 20px;
+}

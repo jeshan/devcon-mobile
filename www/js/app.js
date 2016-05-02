@@ -69,6 +69,16 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
+    .state('app.schedule', {
+      url: '/schedule',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/schedule.html',
+          controller: 'ScheduleCtrl'
+        }
+      }
+    })
+
     .state('app.extensions', {
       url: '/extensions',
       views: {

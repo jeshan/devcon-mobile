@@ -9088,3 +9088,9 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+div.schedule-list {
+  padding-top: 100px; }
+
+.tabs-top > .tabs {
+  top: 20px; }
