@@ -9104,3 +9104,6 @@ div.schedule-list {
 
 .register {
   color: darkcyan; }
+
+#about .item-body {
+  text-align: justify; }
