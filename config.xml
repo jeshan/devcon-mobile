@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.methodicalprogrammer.devconmobile311045" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Developers Conference 2016</name>
+  <name>DevCon 2016</name>
   <description>
-    The official app for the MSCC Devevelopers Conference 2016, built to be your co-pilot to navigate the conference.
+    Everything you need to know about the MSCC Developers Conference 2016 to be held on 20-22 May 2016.
 
     -- Explore the conference agenda, with details on themes, topics and speakers
     -- Add events to a personalised schedule
-    -- Get reminders before events in “My schedule” start
-    -- Guide yourself using the vector-based conference map
-    -- Follow public social I/O related conversations on Twitter
-    -- Use the Widget to check your upcoming events directly from your home screen
+    -- Get reminders before events in your schedule start
+    -- Follow public social I/O related conversations
 
-    *Exclusive for In person attendees:*
-    -- Take advantage of facilitated pre-event WiFi configuration
+    This app is designed for phones only, not tablets nor other devices.
     </description>
   <author email="j@jeshan.co" href="http://MethodicalProgrammer.com">
       Jeshan G. BABOOA
@@ -25,7 +22,7 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="SplashScreenDelay" value="500"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
@@ -49,4 +46,5 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
+  <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>
