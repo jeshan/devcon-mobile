@@ -3,7 +3,7 @@
     <ion-tabs class="tabs-striped tabs-top">
       <ion-tab title="Friday, 20/5" on-select="selectTab(1)">
         <div class="list schedule-list">
-          <a class="item item-avatar" ng-repeat="event in events[0]" ng-click="showEventDetails(event)">
+          <a class="item" ng-repeat="event in events[0]" ng-click="showEventDetails(event)">
             <h2>{{event.title}}</h2>
             <h3 ng-if="event.speaker" style="font-style: italic">By {{event.speaker}}</h3>
             <p>{{event.time}}</p>
@@ -13,7 +13,7 @@
 
       <ion-tab title="Saturday, 21/5" on-select="selectTab(2)">
         <div class="list schedule-list">
-          <a class="item item-avatar" ng-repeat="event in events[1]" ng-click="showEventDetails(event)">
+          <a class="item" ng-repeat="event in events[1]" ng-click="showEventDetails(event)">
             <h2>{{event.title}}</h2>
             <h3 ng-if="event.speaker" style="font-style: italic">By {{event.speaker}}</h3>
             <p>{{event.time}}</p>
@@ -23,7 +23,7 @@
 
       <ion-tab title="Sunday, 22/5" on-select="selectTab(3)">
         <div class="list schedule-list">
-          <a class="item item-avatar" ng-repeat="event in events[2]" ng-click="showEventDetails(event)">
+          <a class="item" ng-repeat="event in events[2]" ng-click="showEventDetails(event)">
             <h2>{{event.title}}</h2>
             <h3 ng-if="event.speaker" style="font-style: italic">By {{event.speaker}}</h3>
             <p>{{event.time}}</p>
