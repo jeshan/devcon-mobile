@@ -211,3 +211,7 @@ p {
 .platform-android .popover{
 margin-top:10px;
 }
+
+.item-avatar {
+  padding-left: 16px !important;
+}
