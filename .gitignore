@@ -5,4 +5,6 @@ node_modules/
 platforms/
 plugins/
 
+resources/android/
+
 .idea/
