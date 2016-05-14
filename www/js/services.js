@@ -3,7 +3,7 @@
  * Date: 03/05/16
  * Time: 23:25
  */
-app.factory('sessionService', function ($log, $http, $q, $timeout) {
+app.factory('sessionService', function ($log, $http, $q, $timeout, $ionicLoading, $ionicPopup) {
   var entries = [];
 
   return {
@@ -49,6 +49,11 @@ app.factory('sessionService', function ($log, $http, $q, $timeout) {
               //next(data);
             })
             .error(function (data) {
+              $ionicLoading.hide();
+              $ionicPopup.alert({
+                title: 'Error',
+                template: 'Mysterious error occurred getting session data :('
+              });
               next({error: true, data: data});
             });
         });
