@@ -1,4 +1,4 @@
-﻿app.controller('ScheduleCtrl', function ($scope, $stateParams, ionicMaterialInk, sessionService, $timeout, $ionicPopup, $window, $q, $ionicLoading) {
+﻿app.controller('MainScheduleCtrl', function ($scope, ionicMaterialInk, sessionService, $timeout, $window, $q, $ionicLoading) {
   //ionic.material.ink.displayEffect();
   ionicMaterialInk.displayEffect();
 
@@ -46,20 +46,7 @@
     $scope.events[index] = response;
   };
 
-  $scope.showEventDetails = function (event) {
-    if (!event.abstract) {
-      $ionicPopup.alert({
-        title: 'Error',
-        template: 'No info available for this session :('
-      });
-      return;
-    }
-    $ionicPopup.alert({
-      title: event.title,
-      template: event.abstract
-    });
-  };
-
+  // TODO
   $scope.speakerImages = [
     {'chervine': 'img/speakers/ChervineBhiwoo.jpg'},
     {'clement': 'img/speakers/ClementKerneur.png'},

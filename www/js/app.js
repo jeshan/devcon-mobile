@@ -69,12 +69,32 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
-    .state('app.schedule', {
-      url: '/schedule',
+    .state('app.schedule-main', {
+      url: '/schedule-main',
       views: {
         'menuContent': {
-          templateUrl: 'templates/schedule.html',
-          controller: 'ScheduleCtrl'
+          templateUrl: 'templates/schedule-main.html',
+          controller: 'MainScheduleCtrl'
+        }
+      }
+    })
+
+    .state('app.schedule-makercon', {
+      url: '/schedule-makercon',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/schedule-makercon.html',
+          controller: 'MakerConScheduleCtrl'
+        }
+      }
+    })
+
+    .state('app.schedule-linux', {
+      url: '/schedule-linux',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/schedule-linux.html',
+          controller: 'LinuxScheduleCtrl'
         }
       }
     })
@@ -127,5 +147,22 @@ app.config(function ($stateProvider, $urlRouterProvider) {
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/schedule');
+  $urlRouterProvider.otherwise('/app/schedule-main');
+});
+
+
+app.run(function ($rootScope, $ionicPopup) {
+  $rootScope.showEventDetails = function (event) {
+    if (!event.abstract) {
+      $ionicPopup.alert({
+        title: 'Error',
+        template: 'No info available for this session :('
+      });
+      return;
+    }
+    $ionicPopup.alert({
+      title: event.title,
+      template: event.abstract
+    });
+  }
 });
