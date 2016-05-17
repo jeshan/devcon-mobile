@@ -25,48 +25,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('app', {
       url: '/app',
       abstract: true,
-      templateUrl: 'templates/menu.html',
-      controller: 'AppCtrl'
-    })
-
-    .state('app.lists', {
-      url: '/lists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/lists.html',
-          controller: 'ListsCtrl'
-        }
-      }
-    })
-
-    .state('app.ink', {
-      url: '/ink',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/ink.html',
-          controller: 'InkCtrl'
-        }
-      }
-    })
-
-    .state('app.motion', {
-      url: '/motion',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/motion.html',
-          controller: 'MotionCtrl'
-        }
-      }
-    })
-
-    .state('app.home', {
-      url: '/home',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/home.html',
-          controller: 'HomeCtrl'
-        }
-      }
+      templateUrl: 'templates/menu.html'
     })
 
     .state('app.schedule-main', {
@@ -108,16 +67,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
-    .state('app.extensions', {
-      url: '/extensions',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/extensions.html',
-          controller: 'ExtensionsCtrl'
-        }
-      }
-    })
-
     .state('app.about', {
       url: '/about',
       views: {
@@ -136,14 +85,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
-    /*.state('app.components', {
-      url: '/components',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/components.html'
-        }
-      }
-    })*/
   ;
 
   // if none of the above states are matched, use this as the fallback
