@@ -11,6 +11,9 @@
         <h2>{{event.title}}</h2>
         <h3 ng-if="event.speaker" style="font-style: italic">By {{event.speaker}}</h3>
         <p>{{event.time}}</p>
+        <p ng-if="event.room">Room: {{event.room}}</p>
+        <p ng-if="event.language">Language: {{event.language}}</p>
+        <p ng-if="event.level">Level: {{event.level}}</p>
       </li>
     </ul>
   </ion-content>
