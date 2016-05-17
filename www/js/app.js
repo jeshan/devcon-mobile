@@ -58,6 +58,17 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
+    .state('app.saved-sessions', {
+      url: '/saved-sessions',
+      cache: false,
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/saved-sessions.html',
+          controller: 'SavedSessionsCtrl'
+        }
+      }
+    })
+
     .state('app.map', {
       url: '/map',
       views: {
@@ -92,7 +103,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 
-app.run(function ($rootScope, $ionicPopup) {
+app.run(function ($rootScope, $ionicPopup, $window) {
   $rootScope.showEventDetails = function (event) {
     if (!event.abstract) {
       $ionicPopup.alert({
@@ -105,5 +116,26 @@ app.run(function ($rootScope, $ionicPopup) {
       title: event.title,
       template: event.abstract
     });
-  }
+  };
+
+  $rootScope.saveEvent = function (event) {
+    //$ionicPopup.
+    var savedEvents = $window.localStorage['saved-events'];
+    if (!savedEvents) {
+      savedEvents = '[]';
+    }
+    savedEvents = JSON.parse(savedEvents);
+    if (_.find(savedEvents, {'speaker': event.speaker, 'title': event.title})) {
+      $ionicPopup.alert({
+        template: 'Session already saved!'
+      });
+    } else {
+      savedEvents.push(event);
+      $window.localStorage['saved-events'] = JSON.stringify(savedEvents);
+      $ionicPopup.alert({
+        title: 'Session saved',
+        template: "Find all the sessions you've saved in the side menu"
+      });
+    }
+  };
 });

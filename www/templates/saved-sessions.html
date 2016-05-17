@@ -1,14 +1,9 @@
 
-<ion-view view-title="Linux InstallFest (Saturday)">
+<ion-view view-title="My Saved Sessions">
   <ion-content>
-    <ion-refresher on-refresh="refreshData()"
-                   pulling-text="Pull to refresh sessions information..."
-                   refreshing-text="Loading..."
-                   refreshing-icon="ion-loading-c">
-    </ion-refresher>
 
     <ul class="list">
-      <li class="item" ng-repeat="event in events" ng-click="showEventDetails(event)" on-hold="saveEvent(event)">
+      <li class="item" ng-repeat="event in events" ng-click="showEventDetails(event)">
         <h2>{{event.title}}</h2>
         <h3 ng-if="event.speaker" style="font-style: italic">By {{event.speaker}}</h3>
         <p>{{event.time}}</p>
