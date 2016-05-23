@@ -45,17 +45,4 @@
     $window.localStorage['devcon2016-day-' + index] = JSON.stringify(response);
     $scope.events[index] = response;
   };
-
-  // TODO
-  $scope.speakerImages = [
-    {'chervine': 'img/speakers/ChervineBhiwoo.jpg'},
-    {'clement': 'img/speakers/ClementKerneur.png'},
-    {'dhiruj': 'img/speakers/DhirujRambaran.jpg'},
-    {'eric': 'img/speakers/EricCoquelin.jpg'},
-    {'ish': 'img/speakers/IshSookun.jpg'}
-  ];
-
-  $scope.speakerImage = function (name) {
-
-  }
 });

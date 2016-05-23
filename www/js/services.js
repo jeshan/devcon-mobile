@@ -4,7 +4,6 @@
  * Time: 23:25
  */
 app.factory('sessionService', function ($log, $http, $q, $timeout, $ionicLoading, $ionicPopup) {
-  var entries = [];
 
   return {
     getList: function (next) {
@@ -51,8 +50,6 @@ app.factory('sessionService', function ($log, $http, $q, $timeout, $ionicLoading
               });
 
               resolve(response);
-              //angular.copy(feedList, entries);
-              //next(data);
             })
             .error(function (data) {
               $ionicLoading.hide();
@@ -65,7 +62,6 @@ app.factory('sessionService', function ($log, $http, $q, $timeout, $ionicLoading
         });
       });
 
-    },
-    entries: entries
+    }
   };
 });
