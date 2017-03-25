@@ -8,7 +8,7 @@ app.factory('sessionService', function ($log, $http, $q, $timeout, $ionicLoading
   return {
     getList: function (next) {
       // https://spreadsheets.google.com/feeds/worksheets/1eGVUyO9U_JqSMqF2ZQSCyzRMAxOlplFGJ6L2uwfnoDw/public/full
-      var key = "1eGVUyO9U_JqSMqF2ZQSCyzRMAxOlplFGJ6L2uwfnoDw";
+      var key = "1WOdGIWVatrnhJoJoH4pgsdwtMhBce9kH1aI-AoBlBW0";
       var sheet = "od6";
 
       switch (next) {

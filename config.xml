@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.methodicalprogrammer.devconmobile311045" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>DevCon 2016</name>
+  <name>DevCon 2017</name>
   <description>
-    Everything you need to know about the MSCC Developers Conference 2016 to be held on 20-22 May 2016.
+    Everything you need to know about the MSCC Developers Conference 2017 to be held on 30 March - 01 April 2017.
 
     -- Explore the conference agenda, with details on themes, topics and speakers
     -- Add events to a personalised schedule
 
+    For more details, visit http://conference.mscc.mu/
+
     This app is designed for phones only, not tablets nor other devices.
     </description>
-  <author email="j@jeshan.co" href="http://MethodicalProgrammer.com">
+  <author email="j@jeshan.co" href="https://twitter.com/jeshan25">
       Jeshan G. BABOOA
     </author>
   <content src="index.html"/>

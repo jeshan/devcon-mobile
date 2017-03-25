@@ -8,3 +8,5 @@ plugins/
 resources/android/
 
 .idea/
+
+*.iml

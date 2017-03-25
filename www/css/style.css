@@ -51,10 +51,18 @@ p {
 /* Menu */
 
 .menu .bar.bar-header.expanded {
-    background-image: url('../img/material-graphite.jpg');
     background-size: 120%;
     background-position: 0%;
     transition: all .5s ease-in-out;
+
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ee0978), color-stop(100%, #ff6a00));
+  background: -webkit-linear-gradient(315deg, #ee0978 0%, #ff6a00 100%);
+  background: linear-gradient(135deg, #ee0978 0%, #ff6a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee0978', endColorstr='#ff6a00', GradientType=1);
+  background-color: transparent !important;
 }
 
 .menu.menu-left * {
@@ -212,3 +220,44 @@ p {
 margin-top:10px;
 }
 
+.header-item {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+  background: -webkit-gradient(left top,right bottom,color-stop(0%,#ee0978),color-stop(100%,#ff6a00));
+  background: -webkit-linear-gradient(315deg,#ee0978 0%,#ff6a00 100%);
+  background: linear-gradient(135deg,#ee0978 0%,#ff6a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee0978',endColorstr='#ff6a00',GradientType=1);
+}
+
+.bar-positive {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(left top,right bottom,color-stop(0%,#ee0978),color-stop(100%,#ff6a00));
+  background: -webkit-linear-gradient(315deg,#ee0978 0%,#ff6a00 100%);
+  background: linear-gradient(135deg,#ee0978 0%,#ff6a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee0978',endColorstr='#ff6a00',GradientType=1);
+  background-color: transparent !important;
+}
+
+.avatar, .item-avatar .avatar {
+  border-radius: 0;
+}
+
+.bar-header {
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+.button-positive {
+  background-color: crimson !important;
+}
+
+.menu-bottom {
+  left: 16px;
+  top: 92px;
+  position: absolute;
+}

@@ -1,7 +1,7 @@
 {
   "name": "devcon-mobile",
   "version": "1.1.1",
-  "description": "devcon-mobile: The app for the MSCC Developers Conference 2016",
+  "description": "devcon-mobile: The app for the MSCC Developers Conference 2017",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",

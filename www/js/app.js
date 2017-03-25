@@ -48,16 +48,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     })
 
-    .state('app.schedule-linux', {
-      url: '/schedule-linux',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/schedule-linux.html',
-          controller: 'LinuxScheduleCtrl'
-        }
-      }
-    })
-
     .state('app.saved-sessions', {
       url: '/saved-sessions',
       cache: false,

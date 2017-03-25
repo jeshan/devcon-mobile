@@ -5,7 +5,7 @@
   $scope.events = [];
   $scope.selectTab = function (index) {
     $timeout(function () {
-      var dataForDay = $window.localStorage['devcon2016-day-' + index];
+      var dataForDay = $window.localStorage['devcon2017-day-' + index];
       if (!dataForDay) {
         $ionicLoading.show();
         sessionService.getList(index + 1).then(function (response) {
@@ -42,7 +42,7 @@
   };
 
   $scope.saveResponse = function (index, response) {
-    $window.localStorage['devcon2016-day-' + index] = JSON.stringify(response);
+    $window.localStorage['devcon2017-day-' + index] = JSON.stringify(response);
     $scope.events[index] = response;
   };
 });
