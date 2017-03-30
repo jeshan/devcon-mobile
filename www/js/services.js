@@ -57,7 +57,6 @@ app.factory('sessionService', function ($log, $http, $q, $timeout, $ionicLoading
                 title: 'Error',
                 template: 'Mysterious error occurred getting session data :('
               });
-              next({error: true, data: data});
             });
         });
       });
