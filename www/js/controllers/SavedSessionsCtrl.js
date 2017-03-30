@@ -1,7 +1,7 @@
 app.controller('SavedSessionsCtrl', function ($scope, $window, $timeout, $ionicPopup) {
 
   $timeout(function () {
-    var savedEvents = $window.localStorage['saved-events'];
+    var savedEvents = $window.localStorage['devcon2017-saved-events'];
     if (!savedEvents) {
       savedEvents = '[]';
     }
