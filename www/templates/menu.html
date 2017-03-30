@@ -21,22 +21,34 @@
         <ion-item nav-clear menu-close href="#/app/schedule-main">
           Main event
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/schedule-makercon">
+        <ion-item nav-clear menu-close ng-click="openExtra('makercon')">
           MakerCon
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/saved-sessions">
-          My saved sessions
+        <ion-item nav-clear menu-close ng-click="openExtra('linux')">
+          Linux InstallFest
         </ion-item>
+        <hr/>
+        <ion-item nav-clear menu-close ng-click="openExtra('drupal')">
+          Drupal Workshop
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="openExtra('atlassian')">
+          Atlassian User Group
+        </ion-item>
+        <hr/>
         <ion-item nav-clear menu-close href="#/app/map">
           Venues
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="openExtra('networking')">
+          Networking & Community
+        </ion-item>
+        <hr/>
+        <ion-item nav-clear menu-close href="#/app/saved-sessions">
+          My saved sessions
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/about">
           About
         </ion-item>
         <hr />
-        <ion-item nav-clear menu-close href="#/app/register" style="color: crimson;">
-          Register
-        </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>

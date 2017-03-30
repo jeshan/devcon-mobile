@@ -93,7 +93,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 
-app.run(function ($rootScope, $ionicPopup, $window) {
+app.run(function ($rootScope, $ionicPopup, $window, extraSessions) {
   $rootScope.showEventDetails = function (event) {
     if (!event.abstract) {
       $ionicPopup.alert({
@@ -108,9 +108,14 @@ app.run(function ($rootScope, $ionicPopup, $window) {
     });
   };
 
+  $rootScope.openExtra = function(item) {
+    var extraSession = extraSessions[item];
+    $ionicPopup.alert(extraSession);
+  };
+
   $rootScope.saveEvent = function (event) {
     //$ionicPopup.
-    var savedEvents = $window.localStorage['saved-events'];
+    var savedEvents = $window.localStorage['devcon2017-saved-events'];
     if (!savedEvents) {
       savedEvents = '[]';
     }
@@ -121,7 +126,7 @@ app.run(function ($rootScope, $ionicPopup, $window) {
       });
     } else {
       savedEvents.push(event);
-      $window.localStorage['saved-events'] = JSON.stringify(savedEvents);
+      $window.localStorage['devcon2017-saved-events'] = JSON.stringify(savedEvents);
       $ionicPopup.alert({
         title: 'Session saved',
         template: "Find all the sessions you've saved in the side menu"
